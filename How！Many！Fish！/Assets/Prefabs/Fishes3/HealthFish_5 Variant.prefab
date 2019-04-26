@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5643878844380005380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8764102042542014645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601490d1a5783834eb05d0fdec807eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &2652679283281535693
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6733001974531662456, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_Name
+      value: HealthFish_5 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125715488654846813, guid: e684dc1194d9bce459bc82251e0956bd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1554805935609740877, guid: e684dc1194d9bce459bc82251e0956bd, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: e684dc1194d9bce459bc82251e0956bd, type: 3}
+--- !u!1 &8764102042542014645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6733001974531662456, guid: e684dc1194d9bce459bc82251e0956bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2652679283281535693}
+  m_PrefabAsset: {fileID: 0}

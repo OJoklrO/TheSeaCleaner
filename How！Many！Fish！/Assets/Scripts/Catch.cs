@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class Catch : MonoBehaviour
 {
@@ -10,19 +9,16 @@ public class Catch : MonoBehaviour
     bool CatchTrash = true;//切换模式
     public static bool IsAlive = true;
     public static int count = 0;//计分
-    public Canvas End;
+    //public Canvas End;
     public AudioClip MusicTrash_1, MusicTrash_2, MusicFish, MusicHFish;
     public Sprite SP1, SP2;
     AudioSource AS;
     public static int  Score=0;
     Animator AN;
+    public static int SpeedRate = 0;
 
-    public Canvas Canvas_end;
-    public Text t;
-
-    public AsyncOperation LoadingScene;                   // 加载123使直接预加载跳转界面
-    public Button BackToStart;
-
+    //public Canvas Canvas_end;
+    //public Text t;
 
     private void Awake()
     {
@@ -32,7 +28,7 @@ public class Catch : MonoBehaviour
 
     void Start()
     {
-        Canvas_end.enabled = false;
+        //Canvas_end.enabled = false;
         //End.gameObject.SetActive(false);
         AS = gameObject.GetComponent<AudioSource>();
         AS.playOnAwake = false;
@@ -41,8 +37,6 @@ public class Catch : MonoBehaviour
         AN = GetComponent<Animator>();
         AN.SetBool("IsCatch", true);
         count = 0;
-
-        StartCoroutine(LoadMedum());
     }
     void Update()
     {
@@ -90,16 +84,15 @@ public class Catch : MonoBehaviour
                 //Application.Quit();
         }
 
-        // 按下返回按钮出现中间加载界面
-        //if (Input.GetButton("BackToStart"))
-        //{
-        //    LoadingScene.allowSceneActivation = true;
-        //}
-
-        BackToStart.GetComponent<Button>().onClick.AddListener(delegate
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && SpeedRate>-2)
         {
-            LoadingScene.allowSceneActivation = true;
-        });
+            SpeedRate--;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow) && SpeedRate<2)
+        {
+            SpeedRate++;
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -175,19 +168,11 @@ public class Catch : MonoBehaviour
 
 
 
-        Canvas_end.enabled = true;
-        t.text = str;
+        //Canvas_end.enabled = true;
+        //t.text = str;
         Time.timeScale = 0;
-        Canvas_end.enabled = true;
+        //Canvas_end.enabled = true;
         
 
-    }
-
-
-    private IEnumerator LoadMedum()
-    {
-        LoadingScene = SceneManager.LoadSceneAsync("126");
-        LoadingScene.allowSceneActivation = false;
-        yield return LoadingScene;
     }
 }
